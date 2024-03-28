@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+    .blog-header {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .blog-content {
+      padding: 50px 15px;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+      </a>
+      Madhya Pradesh
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <!-- Align items to the right -->
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./culture.html">Culture</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Visiting Places
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+              <a class="dropdown-item" href="./indore.html">Indore</a>
+              <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+              <a class="dropdown-item" href="./orchha.html">Orchha</a>
+              <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- blog section -->
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mt-5">
+        A Comprehensive Overview of Madhya Pradesh
+      </h2>
+      <header class="blog-header">
+        <img src="oppu.jpg" alt="Blog Header Image" class="img-fluid" />
+      </header>
+
+      <div class="blog-content">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <p class="font-italic font-weight-lighter">
+              Madhya Pradesh, often referred to as the "Heart of India," is a
+              land of captivating contrasts and timeless treasures. From its
+              vibrant cultural tapestry to its breathtaking natural landscapes,
+              the state offers a kaleidoscope of experiences that leave a
+              lasting impression on every traveler.
+            </p>
+
+            <h3>Rich Cultural Heritage:</h3>
+
+            <p>
+              Madhya Pradesh boasts a rich and diverse cultural heritage, shaped
+              by centuries of history and tradition. Its ancient temples,
+              majestic forts, and intricate cave paintings bear testimony to the
+              glorious past of dynasties like the Chandela, Gond, and Bundela,
+              reflecting a harmonious blend of Hindu, Muslim, and tribal
+              influences.
+            </p>
+
+            <h3>Natural Wonders:</h3>
+
+            <p>
+              Home to a wealth of natural wonders, Madhya Pradesh entices nature
+              enthusiasts with its lush forests, cascading waterfalls, and
+              serene rivers. From the dense jungles of Kanha and Bandhavgarh to
+              the majestic gorges of Bhedaghat and the tranquil lakes of Bhopal,
+              the state's diverse landscapes offer a sanctuary for wildlife and
+              a playground for adventure seekers.
+            </p>
+
+            <h3>Historical Landmarks:</h3>
+
+            <p>
+              The state's historical landmarks stand as monuments to its
+              illustrious past, preserving the legacy of ancient civilizations
+              and medieval rulers. The awe-inspiring temples of Khajuraho, the
+              imposing forts of Gwalior and Mandu, and the UNESCO-listed sites
+              of Sanchi and Bhimbetka serve as reminders of Madhya Pradesh's
+              rich architectural and cultural heritage.
+            </p>
+
+            <h3>Culinary Delights:</h3>
+
+            <p>
+              Madhya Pradesh's culinary scene is a delightful blend of flavors
+              and aromas, reflecting the state's diverse cultural influences and
+              agricultural abundance. From the spicy street food of Indore to
+              the royal feasts of Bhopal and the tribal delicacies of Bastar,
+              every dish tells a story of tradition, innovation, and culinary
+              craftsmanship.
+            </p>
+
+            <h3>Eco-Tourism Opportunities:</h3>
+
+            <p>
+              For eco-conscious travelers, Madhya Pradesh offers a myriad of
+              opportunities to explore its pristine wilderness and promote
+              sustainable tourism practices. Whether embarking on a wildlife
+              safari in one of its national parks, trekking through its scenic
+              landscapes, or participating in community-based tourism
+              initiatives, visitors can experience the state's natural beauty
+              while contributing to its conservation.
+            </p>
+
+            <p>
+              In conclusion, Madhya Pradesh is a treasure trove of experiences
+              waiting to be discovered. With its rich cultural heritage,
+              breathtaking natural landscapes, historical landmarks, culinary
+              delights, and eco-tourism opportunities, the state offers
+              something for every traveler, promising a journey of exploration,
+              enlightenment, and unforgettable memories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-part">
+              <div class="icons">
+                <!-- Add your icons here -->
+                <a href="#"
+                  ><i
+                    class="fab fa-linkedin"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-github"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-instagram"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-twitter"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <ul class="list-unstyled quick-links">
+                <li>Quick-links</li>
+                <li>
+                  <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Bhopal</a
+                  >
+                </li>
+                <li>
+                  <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Indore</a
+                  >
+                </li>
+                <li>
+                  <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Gwalior</a
+                  >
+                </li>
+                <li>
+                  <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Orchha</a
+                  >
+                </li>
+                <li>
+                  <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Khajuraho</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <p>About Us</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <p>Contact Us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

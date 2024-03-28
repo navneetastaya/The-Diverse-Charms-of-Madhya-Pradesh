@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <style>
+    /* Custom CSS for logo alignment */
+    @media (min-width: 768px) {
+      .navbar-brand {
+        margin-right: auto; /* Push the logo to the left */
+      }
+    }
+    /* Custom CSS for footer alignment */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer-part {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-part .icons {
+      margin-right: auto;
+    }
+
+    @media (max-width: 991.98px) {
+      footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+
+    /* Custom CSS for footer */
+    footer {
+      background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+      box-shadow: 0px 5px 10px rgba(129, 129, 129, 0.5); /* Shadow effect */
+    }
+    .icons i {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+    .card {
+      /* Set a fixed height for card's wrapper */
+      height: 100%;
+    }
+
+    .card-body {
+      /* Use flexbox to ensure card content fills available space */
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+
+    .card-text {
+      /* Allow text to overflow and be scrolled if necessary */
+      overflow: auto;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./logo.jpg" alt="Madhya Pradesh Logo" height="70" />
+      </a>
+      Madhya Pradesh
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <!-- Align items to the right -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./culture.html">Culture</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Visiting Places
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./bhopal.html">Bhopal</a>
+              <a class="dropdown-item" href="./indore.html">Indore</a>
+              <a class="dropdown-item" href="./Gwalior.html">Gwalior</a>
+              <a class="dropdown-item" href="./orchha.html">Orchha</a>
+              <a class="dropdown-item" href="./Khajuraho.html">Khajuraho</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container mt-5" data-aos="fade-up"></section>
+
+    <h2
+      class="text-center"
+      style="
+        background: linear-gradient(to right, #d4145a, #fbb03b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      "
+      data-aos="fade-down"
+    >
+      Exploring the Diverse Charms of Madhya Pradesh
+    </h2>
+    <h5 class="text-center p-4" data-aos="fade-down">
+      Madhya Pradesh, the heart of India, beckons travelers with its
+      multifaceted allure. From delving into its rich history and vibrant
+      culture to marveling at its architectural splendors and natural wonders,
+      the state offers an immersive experience like no other. Embark on a
+      culinary journey through its flavorsome delights and delve into the depths
+      of eco-tourism. Join us as we take a comprehensive overview of Madhya
+      Pradesh, where every corner reveals a new facet of its charm waiting to be
+      explored.
+    </h5>
+
+    <!-- blog section -->
+    <section class="container mt-5" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <!-- 1 -->
+        <div class="col-md-6 mb-4" data-aos="fade-left">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Journey Through the Rich History of Madhya Pradesh
+              </h5>
+              <p class="card-text">
+                Embark on a fascinating journey through the annals of time as we
+                uncover the rich tapestry of Madhya Pradesh's history, from
+                ancient civilizations to medieval empires, shaping the state's
+                cultural landscape.
+              </p>
+              <div class="mt-auto">
+                <a href="blog1.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Unveiling Madhya Pradesh's Cultural Splendor
+              </h5>
+              <p class="card-text">
+                Madhya Pradesh, often hailed as the heart of India, boasts a
+                cultural landscape as diverse as its geography. From vibrant
+                folk traditions to architectural marvels, delve into the essence
+                of this majestic state.
+              </p>
+              <div class="mt-auto">
+                <a href="blog2.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-md-6 mb-4" data-aos="fade-left">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Exploring the Architectural Marvels of Madhya Pradesh
+              </h5>
+              <p class="card-text">
+                Join us on a journey through time as we uncover the
+                awe-inspiring architectural wonders of Madhya Pradesh,
+                showcasing the state's rich cultural heritage and spiritual
+                legacy in its ancient temples and monuments.
+              </p>
+              <div class="mt-auto">
+                <a href="blog3.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Discovering the Natural Wonders of Madhya Pradesh
+              </h5>
+              <p class="card-text">
+                Embark on a journey of exploration as we delve into the
+                breathtaking natural beauty of Madhya Pradesh, from dense
+                forests and towering waterfalls to diverse wildlife sanctuaries,
+                offering a sanctuary for nature enthusiasts and wildlife lovers
+                alike.
+              </p>
+              <div class="mt-auto">
+                <a href="blog4.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-md-6 mb-4" data-aos="fade-left">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Culinary Delights of Madhya Pradesh
+              </h5>
+              <p class="card-text">
+                Delve into the rich and diverse culinary landscape of Madhya
+                Pradesh, where traditional dishes steeped in history and culture
+                offer a delectable fusion of flavors, textures, and aromas that
+                leave a lasting impression on every palate.
+              </p>
+              <div class="mt-auto">
+                <a href="blog5.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Exploring Eco-Tourism in Madhya Pradesh
+              </h5>
+              <p class="card-text">
+                Set out on an eco-friendly adventure in Madhya Pradesh, where
+                untouched wilderness, serene rivers, and vibrant wildlife await
+                exploration. Delve into the state's natural marvels while
+                championing conservation endeavors and sustainable travel
+                practices, fostering a deeper connection with the environment
+                and promoting responsible tourism.
+              </p>
+              <div class="mt-auto">
+                <a href="blog6.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-body">
+              <h5
+                class="card-title"
+                style="
+                  background: linear-gradient(to right, #d4145a, #fbb03b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                A Comprehensive Overview of Madhya Pradesh
+              </h5>
+
+              <p class="card-text">
+                Madhya Pradesh, often referred to as the "Heart of India," is a
+                land of captivating contrasts and timeless treasures. From its
+                vibrant cultural tapestry to its breathtaking natural
+                landscapes, the state offers a kaleidoscope of experiences that
+                leave a lasting impression on every traveler.
+              </p>
+              <div class="mt-auto">
+                <a href="blog7.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-part">
+              <div class="icons">
+                <!-- Add your icons here -->
+                <a href="#"
+                  ><i
+                    class="fab fa-linkedin"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-github"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-instagram"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-twitter"
+                    style="color: rgba(0, 0, 0, 0.5)"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <ul class="list-unstyled quick-links">
+                <li>Quick-links</li>
+                <li>
+                  <a href="./bhopal.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Bhopal</a
+                  >
+                </li>
+                <li>
+                  <a href="./indore.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Indore</a
+                  >
+                </li>
+                <li>
+                  <a href="./Gwalior.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Gwalior</a
+                  >
+                </li>
+                <li>
+                  <a href="./orchha.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Orchha</a
+                  >
+                </li>
+                <li>
+                  <a href="./Khajuraho.html" style="color: rgba(0, 0, 0, 0.5)"
+                    >Top 10 Places to Visit in Khajuraho</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <p>About Us</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-part">
+              <p>Contact Us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
